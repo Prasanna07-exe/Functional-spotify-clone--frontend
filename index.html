@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="#"><img class="logo" src="assets/logo.svg" alt="logo" height="40px" width="40px"></a>
+        <div class="center">
+            <a href="#"><img class="home" src="assets/home.svg" alt="home" height="28px" width="28px"></a>
+            <form action="" method="get">
+                <div class="search">
+                    <input type="text" placeholder="What do you want to play?">
+                    <div class="divider"></div>
+                    <img class="browse" src="assets/browse.svg" alt="browse" height="28px" width="28px">
+                </div>
+            </form>
+        </div>
+        <div class="right-nav">
+            <a href="#">Premium</a>
+            <a href="#">Support</a>
+            <a href="#">Download</a>
+            <div class="divider"></div>
+            <div class="install">
+                <img src="assets/install.svg" height="20px" width="20px" alt="arr">
+                <a href="#" class="install">Install App</a>
+            </div>
+            <a href="#" class="signup">Sign up</a>
+            <a href="#" class="login">Log in</a>
+        </div>
+
+    </nav>
+    <div class="whole">
+        <div class="lbox">
+            <header>
+                <p>Your Library</p>
+                <button>+</button>
+            </header>
+            <div class="playlists">
+                <h4>Create your first playlist</h4>
+                <p>It's easy, we'll help you</p>
+                <button><a href="#">Create playlist</a></button>
+            </div>
+            <div class="podcasts">
+                <h4>Let's find some podcasts to follow</h4>
+                <p>We'll keep you updated on new episodes</p>
+                <button><a href="#">Browse podcasts</a></button>
+            </div>
+            <div class="tags">
+                <span>Legal</span>
+                <span>Safety & Privacy Center</span>
+                <span>Privacy Policy</span>
+                <span>Help Center</span>
+                <span>FAQs</span>
+                <span>Cookies</span>
+                <span>Contact Us</span>
+                <span>About Ads</span>
+                <span>Accessibility</span>
+            </div>
+            <div class="dropdown">
+                <select name="drop" id="lang">
+                    <option value="english">&#127760;English</option>
+                    <option value="hindi">हिन्दी</option>
+                </select>
+            </div>
+        </div>
+        <div class="rbox">
+            <h2>Trending Songs</h2>
+            <div class="songs">
+                <div class="card">
+                    <div class="play" data-src="Sapphire.mp3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 30 30">
+                            <circle cx="14" cy="14" r="14" fill="#1ed760" />
+                            <g transform="translate(7.5,6.5) scale(0.03)">
+                                <path class="icon"
+                                    d="M405.2,232.9L126.8,67.2c-3.4-2-6.9-3.2-10.9-3.2c-10.9,0-19.8,9-19.8,20H96v344h0.1c0,11,8.9,20,19.8,20
+                                 c4.1,0,7.5-1.4,11.2-3.4l278.1-165.5c6.6-5.5,10.8-13.8,10.8-23.1C416,246.7,411.8,238.5,405.2,232.9z"
+                                    fill="black" />
+                            </g>
+                        </svg>
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67616d00001e026fbb60d6a7e03ccb940a518e" alt="sapphire">
+                    <h4>Sapphire</h4>
+                    <p>Ed Sheeran</p>
+                </div>
+                <div class="card">
+                    <div class="play" data-src="Mockingbird.mp3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 30 30">
+                            <circle cx="14" cy="14" r="14" fill="#1ed760" />
+                            <g transform="translate(7.5,6.5) scale(0.03)">
+                                <path class="icon"
+                                    d="M405.2,232.9L126.8,67.2c-3.4-2-6.9-3.2-10.9-3.2c-10.9,0-19.8,9-19.8,20H96v344h0.1c0,11,8.9,20,19.8,20
+                                 c4.1,0,7.5-1.4,11.2-3.4l278.1-165.5c6.6-5.5,10.8-13.8,10.8-23.1C416,246.7,411.8,238.5,405.2,232.9z"
+                                    fill="black" />
+                            </g>
+                        </svg>
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67616d00001e02726d48d93d02e1271774f023" alt="Mockingbird">
+                    <h4>Mockingbird</h4>
+                    <p>Eminem</p>
+                </div>
+                <div class="card">
+                    <div class="play" data-src="Stay.mp3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 30 30">
+                            <circle cx="14" cy="14" r="14" fill="#1ed760" />
+                            <g transform="translate(7.5,6.5) scale(0.03)">
+                                <path class="icon"
+                                    d="M405.2,232.9L126.8,67.2c-3.4-2-6.9-3.2-10.9-3.2c-10.9,0-19.8,9-19.8,20H96v344h0.1c0,11,8.9,20,19.8,20
+                                 c4.1,0,7.5-1.4,11.2-3.4l278.1-165.5c6.6-5.5,10.8-13.8,10.8-23.1C416,246.7,411.8,238.5,405.2,232.9z"
+                                    fill="black" />
+                            </g>
+                        </svg>
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67616d00001e0241e31d6ea1d493dd77933ee5" alt="stay">
+                    <h4>Stay</h4>
+                    <p>Alan Walker</p>
+                </div>
+                <div class="card">
+                    <div class="play" data-src="Perfect.mp3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 30 30">
+                            <circle cx="14" cy="14" r="14" fill="#1ed760" />
+                            <g transform="translate(7.5,6.5) scale(0.03)">
+                                <path class="icon"
+                                    d="M405.2,232.9L126.8,67.2c-3.4-2-6.9-3.2-10.9-3.2c-10.9,0-19.8,9-19.8,20H96v344h0.1c0,11,8.9,20,19.8,20
+                                 c4.1,0,7.5-1.4,11.2-3.4l278.1-165.5c6.6-5.5,10.8-13.8,10.8-23.1C416,246.7,411.8,238.5,405.2,232.9z"
+                                    fill="black" />
+                            </g>
+                        </svg>
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67616d0000b273ba5db46f4b838ef6027e6f96" alt="perfect">
+                    <h4>Perfect</h4>
+                    <p>Ed Sheeran</p>
+                </div>
+                <div class="card">
+                    <div class="play" data-src="Believer.mp3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 30 30">
+                            <circle cx="14" cy="14" r="14" fill="#1ed760" />
+                            <g transform="translate(7.5,6.5) scale(0.03)">
+                                <path class="icon"
+                                    d="M405.2,232.9L126.8,67.2c-3.4-2-6.9-3.2-10.9-3.2c-10.9,0-19.8,9-19.8,20H96v344h0.1c0,11,8.9,20,19.8,20
+                                 c4.1,0,7.5-1.4,11.2-3.4l278.1-165.5c6.6-5.5,10.8-13.8,10.8-23.1C416,246.7,411.8,238.5,405.2,232.9z"
+                                    fill="black" />
+                            </g>
+                        </svg>
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67616d00001e025675e83f707f1d7271e5cf8a" alt="believer">
+                    <h4>Believer</h4>
+                    <p>Imagine Dragons</p>
+                </div>
+                <div class="card">
+                    <div class="play" data-src="Faded.mp3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 30 30">
+                            <circle cx="14" cy="14" r="14" fill="#1ed760" />
+                            <g transform="translate(7.5,6.5) scale(0.03)">
+                                <path class="icon"
+                                    d="M405.2,232.9L126.8,67.2c-3.4-2-6.9-3.2-10.9-3.2c-10.9,0-19.8,9-19.8,20H96v344h0.1c0,11,8.9,20,19.8,20
+                                 c4.1,0,7.5-1.4,11.2-3.4l278.1-165.5c6.6-5.5,10.8-13.8,10.8-23.1C416,246.7,411.8,238.5,405.2,232.9z"
+                                    fill="black" />
+                            </g>
+                        </svg>
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67616d00001e02a108e07c661f9fc54de9c43a" alt="faded">
+                    <h4>Faded</h4>
+                    <p>Alan Walker</p>
+                </div>
+                <div class="card">
+                    <div class="play" data-src="Memories.mp3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 30 30">
+                            <circle cx="14" cy="14" r="14" fill="#1ed760" />
+                            <g transform="translate(7.5,6.5) scale(0.03)">
+                                <path class="icon"
+                                    d="M405.2,232.9L126.8,67.2c-3.4-2-6.9-3.2-10.9-3.2c-10.9,0-19.8,9-19.8,20H96v344h0.1c0,11,8.9,20,19.8,20
+                                 c4.1,0,7.5-1.4,11.2-3.4l278.1-165.5c6.6-5.5,10.8-13.8,10.8-23.1C416,246.7,411.8,238.5,405.2,232.9z"
+                                    fill="black" />
+                            </g>
+                        </svg>
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67616d00001e0286a8ab515de4b7aef28cd631" alt="memories">
+                    <h4>Memories</h4>
+                    <p>Maroon 5</p>
+                </div>
+                <div class="card">
+                    <div class="play" data-src="Muththa Mazhai.mp3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 30 30">
+                            <circle cx="14" cy="14" r="14" fill="#1ed760" />
+                            <g transform="translate(7.5,6.5) scale(0.03)">
+                                <path class="icon"
+                                    d="M405.2,232.9L126.8,67.2c-3.4-2-6.9-3.2-10.9-3.2c-10.9,0-19.8,9-19.8,20H96v344h0.1c0,11,8.9,20,19.8,20
+                                 c4.1,0,7.5-1.4,11.2-3.4l278.1-165.5c6.6-5.5,10.8-13.8,10.8-23.1C416,246.7,411.8,238.5,405.2,232.9z"
+                                    fill="black" />
+                            </g>
+                        </svg>
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67616d00001e02fb617ce51e77be01738a1970" alt="Muththa Mazhai">
+                    <h4>Muththa Mazhai</h4>
+                    <p>A.R. Rahaman, Chinmayi</p>
+                </div>
+                <div class="card">
+                    <div class="play" data-src="Azhagiye.mp3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 30 30">
+                            <circle cx="14" cy="14" r="14" fill="#1ed760" />
+                            <g transform="translate(7.5,6.5) scale(0.03)">
+                                <path class="icon"
+                                    d="M405.2,232.9L126.8,67.2c-3.4-2-6.9-3.2-10.9-3.2c-10.9,0-19.8,9-19.8,20H96v344h0.1c0,11,8.9,20,19.8,20
+                                 c4.1,0,7.5-1.4,11.2-3.4l278.1-165.5c6.6-5.5,10.8-13.8,10.8-23.1C416,246.7,411.8,238.5,405.2,232.9z"
+                                    fill="black" />
+                            </g>
+                        </svg>
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67616d00001e02c337522f31b82e882eca2b6f" alt="azhagiye">
+                    <h4>Azhagiye</h4>
+                    <p>A.R. Rahaman, Haricharan</p>
+                </div>
+                <div class="card">
+                    <div class="play" data-src="Manasilaayo.mp3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 30 30">
+                            <circle cx="14" cy="14" r="14" fill="#1ed760" />
+                            <g transform="translate(7.5,6.5) scale(0.03)">
+                                <path class="icon"
+                                    d="M405.2,232.9L126.8,67.2c-3.4-2-6.9-3.2-10.9-3.2c-10.9,0-19.8,9-19.8,20H96v344h0.1c0,11,8.9,20,19.8,20
+                                 c4.1,0,7.5-1.4,11.2-3.4l278.1-165.5c6.6-5.5,10.8-13.8,10.8-23.1C416,246.7,411.8,238.5,405.2,232.9z"
+                                    fill="black" />
+                            </g>
+                        </svg>
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67616d00001e02da8d29ecfc096bb69dff7ac1" alt="manasilaayo">
+                    <h4>Manasilaayo</h4>
+                    <p>Anirudh Ravichander</p>
+                </div>
+                <div class="card">
+                    <div class="play" data-src="Yaar Indha.mp3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 30 30">
+                            <circle cx="14" cy="14" r="14" fill="#1ed760" />
+                            <g transform="translate(7.5,6.5) scale(0.03)">
+                                <path class="icon"
+                                    d="M405.2,232.9L126.8,67.2c-3.4-2-6.9-3.2-10.9-3.2c-10.9,0-19.8,9-19.8,20H96v344h0.1c0,11,8.9,20,19.8,20
+                                 c4.1,0,7.5-1.4,11.2-3.4l278.1-165.5c6.6-5.5,10.8-13.8,10.8-23.1C416,246.7,411.8,238.5,405.2,232.9z"
+                                    fill="black" />
+                            </g>
+                        </svg>
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67616d00001e026a567a1c612bb9c3985a5a5f" alt="yaar indha">
+                    <h4>Yaar Indha</h4>
+                    <p>G.V. Prakash, Saindhavi</p>
+                </div>
+                <div class="card">
+                    <div class="play" data-src="Mental Manadhil.mp3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 30 30">
+                            <circle cx="14" cy="14" r="14" fill="#1ed760" />
+                            <g transform="translate(7.5,6.5) scale(0.03)">
+                                <path class="icon"
+                                    d="M405.2,232.9L126.8,67.2c-3.4-2-6.9-3.2-10.9-3.2c-10.9,0-19.8,9-19.8,20H96v344h0.1c0,11,8.9,20,19.8,20
+                                 c4.1,0,7.5-1.4,11.2-3.4l278.1-165.5c6.6-5.5,10.8-13.8,10.8-23.1C416,246.7,411.8,238.5,405.2,232.9z"
+                                    fill="black" />
+                            </g>
+                        </svg>
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67616d0000b2732318539f1b037d942fafa581" alt="mental manadhil">
+                    <h4>Mental Manadhil</h4>
+                    <p>A.R. Rahaman, Jonita Gandhi</p>
+                </div>
+                <div class="card">
+                    <div class="play" data-src="Vaseegara.mp3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 30 30">
+                            <circle cx="14" cy="14" r="14" fill="#1ed760" />
+                            <g transform="translate(7.5,6.5) scale(0.03)">
+                                <path class="icon"
+                                    d="M405.2,232.9L126.8,67.2c-3.4-2-6.9-3.2-10.9-3.2c-10.9,0-19.8,9-19.8,20H96v344h0.1c0,11,8.9,20,19.8,20
+                                 c4.1,0,7.5-1.4,11.2-3.4l278.1-165.5c6.6-5.5,10.8-13.8,10.8-23.1C416,246.7,411.8,238.5,405.2,232.9z"
+                                    fill="black" />
+                            </g>
+                        </svg>
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67616d0000b273c728ec74d6b16d88d8e158ef" alt="vaseegara">
+                    <h4>Vaseegara</h4>
+                    <p>Bombay Jayashri</p>
+                </div>
+                <div class="card">
+                    <div class="play" data-src="Vazhithunaiye.mp3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 30 30">
+                            <circle cx="14" cy="14" r="14" fill="#1ed760" />
+                            <g transform="translate(7.5,6.5) scale(0.03)">
+                                <path class="icon"
+                                    d="M405.2,232.9L126.8,67.2c-3.4-2-6.9-3.2-10.9-3.2c-10.9,0-19.8,9-19.8,20H96v344h0.1c0,11,8.9,20,19.8,20
+                                 c4.1,0,7.5-1.4,11.2-3.4l278.1-165.5c6.6-5.5,10.8-13.8,10.8-23.1C416,246.7,411.8,238.5,405.2,232.9z"
+                                    fill="black" />
+                            </g>
+                        </svg>
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67616d00001e027eb5b147dc197bca096c437c" alt="vazhithunaiye">
+                    <h4>Vazhithunaiye</h4>
+                    <p>Leon James, Sid Sriram</p>
+                </div>
+                <div class="card">
+                    <div class="play" data-src="Lungi Dance.mp3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 30 30">
+                            <circle cx="14" cy="14" r="14" fill="#1ed760" />
+                            <g transform="translate(7.5,6.5) scale(0.03)">
+                                <path class="icon"
+                                    d="M405.2,232.9L126.8,67.2c-3.4-2-6.9-3.2-10.9-3.2c-10.9,0-19.8,9-19.8,20H96v344h0.1c0,11,8.9,20,19.8,20
+                                 c4.1,0,7.5-1.4,11.2-3.4l278.1-165.5c6.6-5.5,10.8-13.8,10.8-23.1C416,246.7,411.8,238.5,405.2,232.9z"
+                                    fill="black" />
+                            </g>
+                        </svg>
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67616d0000b2736771f15ed6f80d767b8615c8" alt="lungi dance">
+                    <h4>Lungi Dance</h4>
+                    <p>Yo Yo Honey Singh</p>
+                </div>
+                <div class="card">
+                    <div class="play" data-src="Badtameez Dil.mp3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 30 30">
+                            <circle cx="14" cy="14" r="14" fill="#1ed760" />
+                            <g transform="translate(7.5,6.5) scale(0.03)">
+                                <path class="icon"
+                                    d="M405.2,232.9L126.8,67.2c-3.4-2-6.9-3.2-10.9-3.2c-10.9,0-19.8,9-19.8,20H96v344h0.1c0,11,8.9,20,19.8,20
+                                 c4.1,0,7.5-1.4,11.2-3.4l278.1-165.5c6.6-5.5,10.8-13.8,10.8-23.1C416,246.7,411.8,238.5,405.2,232.9z"
+                                    fill="black" />
+                            </g>
+                        </svg>
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67616d00001e02707ea5b8023ac77d31756ed4" alt="badtameez dil">
+                    <h4>Badtameez Dil</h4>
+                    <p>Pritam, Benny Dayal</p>
+                </div>
+                <div class="card">
+                    <div class="play" data-src="Heeriye.mp3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 30 30">
+                            <circle cx="14" cy="14" r="14" fill="#1ed760" />
+                            <g transform="translate(7.5,6.5) scale(0.03)">
+                                <path class="icon"
+                                    d="M405.2,232.9L126.8,67.2c-3.4-2-6.9-3.2-10.9-3.2c-10.9,0-19.8,9-19.8,20H96v344h0.1c0,11,8.9,20,19.8,20
+                                 c4.1,0,7.5-1.4,11.2-3.4l278.1-165.5c6.6-5.5,10.8-13.8,10.8-23.1C416,246.7,411.8,238.5,405.2,232.9z"
+                                    fill="black" />
+                            </g>
+                        </svg>
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67616d00001e024a60872ae145776164540a7f" alt="Heeriye">
+                    <h4>Heeriye</h4>
+                    <p>Arjit Singh, Jasleen Royal</p>
+                </div>
+                <div class="card">
+                    <div class="play" data-src="Sahiba.mp3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 30 30">
+                            <circle cx="14" cy="14" r="14" fill="#1ed760" />
+                            <g transform="translate(7.5,6.5) scale(0.03)">
+                                <path class="icon"
+                                    d="M405.2,232.9L126.8,67.2c-3.4-2-6.9-3.2-10.9-3.2c-10.9,0-19.8,9-19.8,20H96v344h0.1c0,11,8.9,20,19.8,20
+                                 c4.1,0,7.5-1.4,11.2-3.4l278.1-165.5c6.6-5.5,10.8-13.8,10.8-23.1C416,246.7,411.8,238.5,405.2,232.9z"
+                                    fill="black" />
+                            </g>
+                        </svg>
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67616d0000b273b5e7944443cec785db91184b" alt="sahiba">
+                    <h4>Sahiba</h4>
+                    <p>Jasleen Royal, Stebin Ben</p>
+                </div>
+                <div class="card">
+                    <div class="play" data-src="Kesariya.mp3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 30 30">
+                            <circle cx="14" cy="14" r="14" fill="#1ed760" />
+                            <g transform="translate(7.5,6.5) scale(0.03)">
+                                <path class="icon"
+                                    d="M405.2,232.9L126.8,67.2c-3.4-2-6.9-3.2-10.9-3.2c-10.9,0-19.8,9-19.8,20H96v344h0.1c0,11,8.9,20,19.8,20
+                                 c4.1,0,7.5-1.4,11.2-3.4l278.1-165.5c6.6-5.5,10.8-13.8,10.8-23.1C416,246.7,411.8,238.5,405.2,232.9z"
+                                    fill="black" />
+                            </g>
+                        </svg>
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67616d0000b273c08202c50371e234d20caf62" alt="kesariya">
+                    <h4>Kesariya</h4>
+                    <p>Pritam, Arjit Singh</p>
+                </div>
+                <div class="card">
+                    <div class="play" data-src="Tum Hi Ho.mp3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 30 30">
+                            <circle cx="14" cy="14" r="14" fill="#1ed760" />
+                            <g transform="translate(7.5,6.5) scale(0.03)">
+                                <path class="icon"
+                                    d="M405.2,232.9L126.8,67.2c-3.4-2-6.9-3.2-10.9-3.2c-10.9,0-19.8,9-19.8,20H96v344h0.1c0,11,8.9,20,19.8,20
+                                 c4.1,0,7.5-1.4,11.2-3.4l278.1-165.5c6.6-5.5,10.8-13.8,10.8-23.1C416,246.7,411.8,238.5,405.2,232.9z"
+                                    fill="black" />
+                            </g>
+                        </svg>
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67616d0000b2736404721c1943d5069f0805f3" alt="tum hi ho">
+                    <h4>Tum Hi Ho</h4>
+                    <p>Mithoon, Arjit Singh</p>
+                </div>
+                <div class="card">
+                    <div class="play" data-src="Chammak Challo.mp3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 30 30">
+                            <circle cx="14" cy="14" r="14" fill="#1ed760" />
+                            <g transform="translate(7.5,6.5) scale(0.03)">
+                                <path class="icon"
+                                    d="M405.2,232.9L126.8,67.2c-3.4-2-6.9-3.2-10.9-3.2c-10.9,0-19.8,9-19.8,20H96v344h0.1c0,11,8.9,20,19.8,20
+                                 c4.1,0,7.5-1.4,11.2-3.4l278.1-165.5c6.6-5.5,10.8-13.8,10.8-23.1C416,246.7,411.8,238.5,405.2,232.9z"
+                                    fill="black" />
+                            </g>
+                        </svg>
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67616d00001e0244aa56e23e3a89802e6c6347" alt="chammak challo">
+                    <h4>Chammak Challo</h4>
+                    <p>Vishal-Shekhar, Akon</p>
+                </div>
+            </div>
+            <br><br>
+            <h2>Popular artists</h2>
+            <div class="artists">
+                <div class="artist">
+                    <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca" alt="pritam">
+                    <h4>Pritam</h4>
+                    <p>Artist</p>
+                </div>
+
+            </div>
+            <br><br>
+            <h2>Popular Radio</h2>
+            <div class="radios">
+                <div class="radio">
+                    <div class="play">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 30 30">
+                            <circle cx="14" cy="14" r="14" fill="#1ed760" />
+                            <g transform="translate(7.5,6.5) scale(0.03)">
+                                <path class="icon"
+                                    d="M405.2,232.9L126.8,67.2c-3.4-2-6.9-3.2-10.9-3.2c-10.9,0-19.8,9-19.8,20H96v344h0.1c0,11,8.9,20,19.8,20
+                                 c4.1,0,7.5-1.4,11.2-3.4l278.1-165.5c6.6-5.5,10.8-13.8,10.8-23.1C416,246.7,411.8,238.5,405.2,232.9z"
+                                    fill="black" />
+                            </g>
+                        </svg>
+                    </div>
+                    <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4YRxDV8wJFPHPTeXepOstw/en"
+                        alt="rad">
+                    <p>With Sachin-Jigar, Atif Aslam,</p>
+                    <p>Sachet Tandon and more</p>
+                </div>
+            </div>
+            <footer>
+                <div class="footer-container">
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Jobs</a></li>
+                            <li><a href="#">For the Record</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Communities</h4>
+                        <ul>
+                            <li><a href="#">For Artists</a></li>
+                            <li><a href="#">Developers</a></li>
+                            <li><a href="#">Advertising</a></li>
+                            <li><a href="#">Investors</a></li>
+                            <li><a href="#">Vendors</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Useful links</h4>
+                        <ul>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Free Mobile App</a></li>
+                            <li><a href="#">Popular by Country</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Spotify Plans</h4>
+                        <ul>
+                            <li><a href="#">Premium Individual</a></li>
+                            <li><a href="#">Premium Duo</a></li>
+                            <li><a href="#">Premium Family</a></li>
+                            <li><a href="#">Premium Student</a></li>
+                            <li><a href="#">Spotify Free</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-socials">
+                        <a href="https://www.instagram.com/prasanna.url/"><img src="https://cdn2.iconfinder.com/data/icons/social-media-2420/512/Instagram-512.png" alt="" height="24px" width="24px"></a>
+                        <a href="https://x.com/spotify"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj5Z6h2su_P2Dpy48AmTVcigVGKB5bsYuMZQ&s" alt="" height="20px" width="20px"></a>
+                        <a href="https://www.facebook.com/Spotify/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/2048px-2023_Facebook_icon.svg.png" alt="" height="24px" width="24px"></a>
+                    </div>
+                </div>
+            </footer>
+            <div class="cpr">
+                <p>&copy; Spotify (Prasanna's Version)</p>
+            </div>
+        </div>
+        <div class="playbar">
+            <div class="song-info">
+                <span id="song-title">Not playing</span>
+                <span>-</span>
+                <span id="time">0:00 / 0:00</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
