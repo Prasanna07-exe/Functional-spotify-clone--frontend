@@ -77,6 +77,11 @@ nav .home {
     border-radius: 25px;
 }
 
+.browse{
+    height: 28px;
+    width: 28px;
+}
+
 .search {
     position: relative;
     display: flex;
@@ -98,15 +103,6 @@ nav .home {
 .search input::placeholder {
     color: rgb(185, 185, 185);
     font-size: 16px;
-}
-
-.search .divider {
-    position: absolute;
-    right: 50px;
-    height: 70%;
-    transform: translateY(-10%);
-    width: 2px;
-    background-color: rgb(100, 100, 100);
 }
 
 .search .browse {
@@ -162,6 +158,19 @@ nav .home {
 
 .right-nav .login:hover {
     background-color: rgb(200, 200, 200);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
 }
 
 .whole {
@@ -412,6 +421,7 @@ nav .home {
     width: 180px;
     border-radius: 50%;
 }
+
 footer {
     padding: 20px 60px;
     margin: 60px 20px;
@@ -474,8 +484,103 @@ footer {
     align-items: center;
     justify-content: center;
 }
-.cpr{
+
+.cpr {
     font-size: 12px;
     margin-left: 20px;
     color: #b3b3b3;
+}
+
+@media only screen and (max-width: 1200px) {
+    .search input {
+        width: 200px;
+        font-size: 12px;
+    }
+
+    .search input::placeholder {
+        font-size: 14px;
+    }
+
+    .search .divider {
+        height: 60%;
+    }
+
+    nav .home {
+        padding: 11px;
+        border-radius: 22px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .hamburger {
+        display: flex;
+        z-index: 101;
+        position: relative;
+    } 
+
+    .right-nav {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background-color: #1a1a1a;
+        padding: 30px 20px;
+        transition: right 0.4s ease;
+        z-index: 100;
+        gap: 20px;
+    }
+
+    .right-nav.show {
+        right: 0;
+    }
+    .right-nav a {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+
+    .right-nav .login {
+        background-color: white;
+        color: black;
+        padding: 12px 24px;
+        border-radius: 25px;
+    }
+    
+}
+
+@media only screen and (max-width: 750px) {
+    .lbox{
+        display: none;
+    }
+    .rbox{
+        width: 95vw;
+    }
+    .home{
+        display: none;
+    }
+    .center input{
+        width: 200px;
+        padding: 10px;
+    }
+    .center input::placeholder{
+        font-size: 12px;
+    }
+    .browse{
+        height: 20px;
+        width: 20px;
+    }
+    .songs .card,
+   .radios .radio{
+    width: 160px;
+   }
+   .artists .artist{
+    width: 160px;
+   }
+   .artist img {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+}
 }
