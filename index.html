@@ -17,11 +17,17 @@
                 <div class="search">
                     <input type="text" placeholder="What do you want to play?">
                     <div class="divider"></div>
-                    <img class="browse" src="assets/browse.svg" alt="browse" height="28px" width="28px">
+                    <img class="browse" id="browse" src="assets/browse.svg" alt="browse">
                 </div>
             </form>
         </div>
-        <div class="right-nav">
+        <div class="hamburger" id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="right-nav" id="right-nav">
             <a href="#">Premium</a>
             <a href="#">Support</a>
             <a href="#">Download</a>
@@ -30,8 +36,8 @@
                 <img src="assets/install.svg" height="20px" width="20px" alt="arr">
                 <a href="#" class="install">Install App</a>
             </div>
-            <a href="#" class="signup">Sign up</a>
-            <a href="#" class="login">Log in</a>
+            <a id="signup" href="#" class="signup">Sign up</a>
+            <a id="login" href="#" class="login">Log in</a>
         </div>
 
     </nav>
@@ -39,17 +45,17 @@
         <div class="lbox">
             <header>
                 <p>Your Library</p>
-                <button>+</button>
+                <button id="plus">+</button>
             </header>
             <div class="playlists">
                 <h4>Create your first playlist</h4>
                 <p>It's easy, we'll help you</p>
-                <button><a href="#">Create playlist</a></button>
+                <button class="leftbutton" style="cursor: pointer;"><a href="#">Create playlist</a></button>
             </div>
             <div class="podcasts">
                 <h4>Let's find some podcasts to follow</h4>
                 <p>We'll keep you updated on new episodes</p>
-                <button><a href="#">Browse podcasts</a></button>
+                <button class="leftbutton" style="cursor: pointer;"><a href="#">Browse podcasts</a></button>
             </div>
             <div class="tags">
                 <span>Legal</span>
@@ -483,9 +489,15 @@
                     </div>
 
                     <div class="footer-socials">
-                        <a href="https://www.instagram.com/prasanna.url/"><img src="https://cdn2.iconfinder.com/data/icons/social-media-2420/512/Instagram-512.png" alt="" height="24px" width="24px"></a>
-                        <a href="https://x.com/spotify"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj5Z6h2su_P2Dpy48AmTVcigVGKB5bsYuMZQ&s" alt="" height="20px" width="20px"></a>
-                        <a href="https://www.facebook.com/Spotify/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/2048px-2023_Facebook_icon.svg.png" alt="" height="24px" width="24px"></a>
+                        <a href="https://www.instagram.com/prasanna.url/"><img
+                                src="https://cdn2.iconfinder.com/data/icons/social-media-2420/512/Instagram-512.png"
+                                alt="" height="24px" width="24px"></a>
+                        <a href="https://x.com/spotify"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj5Z6h2su_P2Dpy48AmTVcigVGKB5bsYuMZQ&s"
+                                alt="" height="20px" width="20px"></a>
+                        <a href="https://www.facebook.com/Spotify/"><img
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/2048px-2023_Facebook_icon.svg.png"
+                                alt="" height="24px" width="24px"></a>
                     </div>
                 </div>
             </footer>
